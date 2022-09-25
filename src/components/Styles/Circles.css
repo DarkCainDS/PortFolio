@@ -1,0 +1,179 @@
+.experience{
+  
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    margin-left: 100px;
+  }
+  .skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    
+  }
+  .outer{
+    
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner{
+    
+    background-color: #434452;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px  rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+  .number{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(170, 22, 22);
+  }
+  .circle1 h1 ,.circle2 h1,.circle3 h1,.circle4 h1,.circle5 h1,.circle6 h1,.circle7 h1,.circle8 h1{
+    
+    font-size: 40px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(
+      to right, 
+      rgb(223, 80, 70), 
+      rgb(51, 228, 110)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+    
+    width: 100%;
+    display: initial;
+    
+    
+  }
+  .circle1 .skill .outer .inner .number {
+    color: #1E7944;
+  }
+  .circle2  .number ,.circle3 .number {
+    color: #6D9324;
+  }
+  .circle4 .number,.circle5 .number,.circle7 .number,.circle8 .number{
+    color: #9D9824;
+  }
+  .circle6 .number{
+    color: #9D602E;
+  }
+  circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+  }
+  svg{
+  position: absolute;
+  top: 1;
+  left: 1;
+  }
+  
+  .circle2 circle, .circle3 circle{
+    fill: none;
+    stroke: url(#GradientColor2);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+  }
+  .circle4 circle , .circle5 circle , .circle7 circle{
+    fill: none;
+    stroke: url(#GradientColor3);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+  }
+  .circle6 circle{
+    fill: none;
+    stroke: url(#GradientColor4);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear forwards;
+  }
+  .circle8 circle{
+    fill: none;
+    stroke: url(#GradientColor5);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim5 2s linear forwards;
+  }
+  @keyframes anim5{
+    100%{
+      stroke-dashoffset: 330;
+    }
+  }
+  @keyframes anim4{
+    100%{
+      stroke-dashoffset: 360;
+    }
+  }
+  
+  @keyframes anim3{
+    100%{
+      stroke-dashoffset: 310;
+    }
+  }
+  @keyframes anim2{
+    100%{
+      stroke-dashoffset: 280;
+    }
+  }
+  
+  
+  @keyframes anim{
+    100%{
+      stroke-dashoffset: 260;
+    }
+  }
+  @media (max-width: 911px){
+
+    .experience{
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      min-height: auto;
+    }
+}
+@media (max-width: 670px){
+    .experience{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .experience h1{
+      font-size: 36px;
+    }
+}  
+@media (max-width: 450px){
+  .experience{
+    
+    display: grid;
+    grid-template-columns: 100%;
+    
+  }
+  .experience h1{
+    font-size: 50px;
+  }
+}  

@@ -1,0 +1,153 @@
+.card {
+    width: 300px;
+    height: 400px;
+    background: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    transform: scale(.95);
+}
+
+.card:hover:after {
+    height: 280px;
+}
+
+.card:hover .con-text p {
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+.card:hover img {
+    transform: scale(.6);
+}
+
+.card:hover .ul {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.card:after {
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1)100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+
+.card img {
+    transform: scale(0.5);
+    z-index: 10;
+    transition: all .25s ease;
+}
+
+.card .con-text {
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card .con-text p {
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -50px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.card .con-text p button {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: poppins;
+    font-size: .75rem;
+    outline: none;
+}
+
+.ul {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 40;
+    border-radius: 14px;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    top: 0px;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all .25s ease;
+}
+
+.ul li {
+    background: #fff;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .3;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+.ul li a{
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.ul li:last-child {
+    border-radius: 0px 0px 12px 12px;
+}
+
+.ul li:first-child {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.ul li:hover {
+    opacity: 1;
+    transform: translate(-7px, -4px);
+    border-radius: 10px;
+}
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.envolope{
+    color: #3C4047;
+    margin-top: 5px;
+   margin-left: 4px;
+}
+.envolope:hover{
+    color: #E1A550;
+}

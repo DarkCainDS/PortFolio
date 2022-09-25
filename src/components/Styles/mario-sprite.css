@@ -1,0 +1,36 @@
+.mario-sprite{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    overflow: hidden;
+    background-image: url(/public/assets/images/mario-world-sprites.png);
+    background-position: 40px 40px;
+    
+    animation: mario-walk 1s steps(1) infinite;
+}
+
+
+@keyframes mario-walk{
+    0%{
+        background-position: 40px -150px;
+    }
+    20%{
+        background-position: 80px -150px;
+    }
+    40%{
+        background-position: 120px -150px;
+    }
+    60%{
+        background-position: 160px -150px;
+    }
+    80%{
+        background-position: 200px -150px;
+    }
+    100%{
+        background-position: 240px -150px;
+    }
+    
+
+}

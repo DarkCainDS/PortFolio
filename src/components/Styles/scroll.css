@@ -1,0 +1,71 @@
+.media-scroller {
+    --spacer: 2rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid;
+    gap: 0;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    padding: 10px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    border-radius: 50px;
+    
+    
+}
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 0%;
+    padding: 20px;
+    background: linear-gradient(90deg, #6eba27bd, #00a9ecb6, #ffe10098, #e7000ca2);
+    border-radius: 100px;
+    box-shadow:  inset 0px 0px 10px 5px gray,
+                         0px 0px 10px 5px gray;
+}
+
+.media-element p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: fantasy;
+    font-style: italic;
+    
+}
+@media (max-width: 911px){
+    .media-element {
+        
+        padding: 10px;
+        border-radius: 50px;
+        box-shadow:  inset 0px 0px 10px 5px gray,
+                             0px 0px 10px 5px gray;
+    }
+    .media-element p {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: lighter;
+        font-size: 15px;
+        font-family: fantasy;
+        font-style: italic;
+        
+    }
+
+}
+.media-element img {
+    box-shadow: 5px 5px 30px 5px gray;
+    border-radius: 70px;
+    inline-size: 100%;
+    aspect-ratio: 14/8;
+    object-fit: cover;
+}
+
+.snaps-inline {
+    box-shadow: inset 10px 10px 10px 50px gray;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10px;
+}
+
+.snaps-inline>* {
+    scroll-snap-align: start;
+}
