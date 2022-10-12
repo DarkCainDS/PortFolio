@@ -12,8 +12,13 @@ export const Home = () => {
   const [isOpen2, openModal2, closeModal2] = useModal(false);
 
   const slides = [
-    { url: "/assets/images/Udemy-02.jpg", title: "beach" },
-    { url: "/assets/images/Udemy-01.jpg", title: "boat" },
+    { url: "/assets/images/Certifieds/Udemy-02.jpg", title: "Udemy-2" },
+    { url: "/assets/images/Certifieds/Udemy-01.jpg", title: "Udemy-1" },
+    { url: "/assets/images/Certifieds/aws-cloud-quest-cloud-practitioner.png", title: "AWS"},
+    { url: "/assets/images/Certifieds/Udemy-3.jpg", title: "Udemy-3" },
+    { url: "/assets/images/Certifieds/Introduccion-al-Pentesting.jpg", title: "Diploma" },
+    { url: "/assets/images/Certifieds/diploma-introduccion-backend.jpg", title: "Back-End-1" },
+    { url: "/assets/images/Certifieds/diploma-ingles-customer-service.jpg", title: "English-1" },
   ];
 
   const containerStyles = {

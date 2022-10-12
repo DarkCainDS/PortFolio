@@ -1,7 +1,5 @@
 {
   "projects": {
-    "Portfolio": "portfolio-by-diegoromero",
     "default": "portfolio-by-diegoromero"
-  },
-  "targets": {}
+  }
 }
