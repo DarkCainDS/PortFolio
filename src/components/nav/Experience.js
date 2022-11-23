@@ -15,7 +15,7 @@ export const Experience = () => {
   }, []);
 
   return (
-    <div>
+    <div >
       <div className='animate__animated animate__lightSpeedInLeft animate__faster 100ms simbologia'>
       <img src='/assets/images/SIMBOLOGIA LISTA V1.png' alt='simbologia' ></img>
       </div>
@@ -66,6 +66,7 @@ export const Experience = () => {
 
 
       </div>
+      
       <div className='bottom123'>
          <hr/>
          </div>

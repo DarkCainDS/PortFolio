@@ -16,9 +16,16 @@ export const Home = () => {
     { url: "/assets/images/Certifieds/Udemy-01.jpg", title: "Udemy-1" },
     { url: "/assets/images/Certifieds/aws-cloud-quest-cloud-practitioner.png", title: "AWS"},
     { url: "/assets/images/Certifieds/Udemy-3.jpg", title: "Udemy-3" },
-    { url: "/assets/images/Certifieds/Introduccion-al-Pentesting.jpg", title: "Diploma" },
-    { url: "/assets/images/Certifieds/diploma-introduccion-backend.jpg", title: "Back-End-1" },
+    { url: "/assets/images/Certifieds/Introduccion-al-Pentesting.jpg", title: "Pentesting-1" },
     { url: "/assets/images/Certifieds/diploma-ingles-customer-service.jpg", title: "English-1" },
+    { url: "/assets/images/Certifieds/diploma-entrevistas-ingles.jpg", title: "English-2" },
+    { url: "/assets/images/Certifieds/diploma-bd.jpg", title: "Database-1" },
+    { url: "/assets/images/Certifieds/diploma-introduccion-backend.jpg", title: "Back-End-1" },
+    { url: "/assets/images/Certifieds/diploma-mongodb.png", title: "Back-End-1" },
+    { url: "/assets/images/Certifieds/diploma-frontend-developer.png", title: "FrontEnd-1" },
+    { url: "/assets/images/Certifieds/diploma-frontend-developer-practico.png", title: "FrontEnd-2" },
+    
+
   ];
 
   const containerStyles = {
